@@ -10,6 +10,9 @@ Cornering:
 Line:
 <decore/Line.decore>
 
+Circling:
+<decore/Circling.decore>
+
 SpinRight:
 <decore/SpinningRadar.decore>
 

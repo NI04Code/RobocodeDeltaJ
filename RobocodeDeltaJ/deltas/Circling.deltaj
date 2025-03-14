@@ -1,0 +1,20 @@
+delta Circling {
+    modifies jab.module.Movement {
+    	adds import robocode.HitWallEvent;
+    
+        adds private int moveDirection;
+        adds private int turnRightValue = 45;
+
+        modifies move() {
+	        bot.setMaxVelocity(5);
+	        bot.setAhead(Double.POSITIVE_INFINITY);
+	        bot.setTurnRight(Double.POSITIVE_INFINITY); 
+	    }
+	    
+	    adds public void listen(robocode.Event e) {
+			if (e instanceof HitWallEvent) {
+				bot.setTurnRight(45);
+			}
+		}
+    }
+}
