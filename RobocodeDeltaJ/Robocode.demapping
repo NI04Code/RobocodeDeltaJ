@@ -10,6 +10,9 @@ Line:
 Cornering:
 <decore/Cornering.decore>
 
+Triangling:
+<decore/Triangling.decore>
+
 SpinningRadar:
 <decore/SpinningRadar.decore>
 
