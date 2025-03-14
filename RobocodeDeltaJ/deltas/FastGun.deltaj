@@ -1,0 +1,21 @@
+delta FastGun {
+	modifies jab.module.Gun {
+		
+		adds import robocode.Bullet;
+		
+		modifies fire() {
+			if (bot.enemy != null) {
+				double bulletPower = 0.1;
+				if (bot.enemy.energy == 0) {
+					bulletPower = 0;
+				}
+				
+				bot.bulletPower = bulletPower;
+				if (bot.getGunHeat() == 0) {
+					Bullet b = bot.setFireBullet(bulletPower);
+					bot.registerBullet(b);
+				}
+			}
+		}
+	}
+}
