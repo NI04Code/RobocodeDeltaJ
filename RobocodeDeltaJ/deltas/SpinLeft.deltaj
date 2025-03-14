@@ -1,0 +1,11 @@
+delta SpinLeft {
+
+	modifies jab.module.Radar {
+	
+		modifies scan() {
+			bot.setTurnRadarRightRadians(Double.NEGATIVE_INFINITY);
+		}
+	
+	}
+
+}

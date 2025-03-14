@@ -4,7 +4,12 @@
     <groups minCardinality="5" maxCardinality="5">
       <features minCardinality="1" maxCardinality="1" name="Radar">
         <groups minCardinality="1" maxCardinality="1">
-          <features maxCardinality="1" name="SpinningRadar"/>
+          <features maxCardinality="1" name="SpinningRadar">
+            <groups minCardinality="1" maxCardinality="1">
+              <features maxCardinality="1" name="SpinLeft"/>
+              <features maxCardinality="1" name="SpinRight"/>
+            </groups>
+          </features>
           <features maxCardinality="1" name="MouseRadar"/>
         </groups>
       </features>
