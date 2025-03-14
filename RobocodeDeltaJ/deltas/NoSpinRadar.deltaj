@@ -1,0 +1,11 @@
+delta NoSpinRadar {
+
+	modifies jab.module.Radar {
+	
+		modifies scan() {
+			bot.setTurnRadarRightRadians(0);
+		}
+	
+	}
+
+}

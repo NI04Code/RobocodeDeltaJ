@@ -19,6 +19,9 @@ SpinningRadar:
 MouseRadar:
 <decore/MouseRadar.decore>
 
+NoSpinRadar:
+<decore/NoSpinRadar.decore>
+
 FastGun:
 <decore/FastGun.decore>
 
