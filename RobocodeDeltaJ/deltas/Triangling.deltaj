@@ -1,0 +1,25 @@
+delta Triangling {
+    modifies jab.module.Movement {
+    	adds import robocode.HitWallEvent;
+    
+        adds private int moveDirection;
+        adds private int turnRightValue = 45;
+
+        modifies move() {
+	        bot.setMaxVelocity(5);
+	        bot.setAhead(10);
+	        bot.setTurnRight(45); 
+			bot.setAhead(10);
+	        bot.setTurnRight(45);
+	        bot.setAhead(10);
+	        bot.setTurnRight(45);
+	        bot.setAhead(10);
+	    }
+	    
+	    adds public void listen(robocode.Event e) {
+			if (e instanceof HitWallEvent) {
+				bot.setTurnRight(45);
+			}
+		}
+    }
+}
